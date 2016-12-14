@@ -14,7 +14,7 @@ body {
   width: 100%;
 }
 
-.slack {
+/*.slack {
   background-image: url(../image/slack.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -36,14 +36,43 @@ body {
   margin-top: 10px;
   text-align: center;
   width: 160px;
-}
+}*/
 
 .title {
   color: $mine-shaft;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
-  margin-top: 30px;
+  margin: 30px 0 15px;
   text-align: center;
+}
+
+.introduction {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.subtitle {
+  color: $mine-shaft;
+  display: inline;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.bold-link {
+  color: $blue;
+  display: inline;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.line-blue {
+  display: block;
+  left: 48%;
+  position: absolute;
+  top: 65%;
 }
 
 .logo {

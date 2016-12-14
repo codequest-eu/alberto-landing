@@ -8,18 +8,19 @@ body {
   height: 100%;
   width: 100%; }
 
-.slack {
+/*.slack {
   background-image: url(../image/slack.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 60vw;
   margin: 0 auto;
-  width: 80vw; }
+  width: 80vw;
+}
 
 .button-cta {
-  background-color: #448aff;
+  background-color: $blue;
   border-radius: 20px;
-  color: #fff;
+  color: $white;
   font-size: 18px;
   font-weight: 500;
   height: 40px;
@@ -28,14 +29,39 @@ body {
   margin-right: 10px;
   margin-top: 10px;
   text-align: center;
-  width: 160px; }
-
+  width: 160px;
+}*/
 .title {
   color: #3d3d3d;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
-  margin-top: 30px;
+  margin: 30px 0 15px;
   text-align: center; }
+
+.introduction {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center; }
+
+.subtitle {
+  color: #3d3d3d;
+  display: inline;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px; }
+
+.bold-link {
+  color: #448aff;
+  display: inline;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px; }
+
+.line-blue {
+  display: block;
+  left: 48%;
+  position: absolute;
+  top: 65%; }
 
 .logo {
   padding: 10px 0 0 10px;
