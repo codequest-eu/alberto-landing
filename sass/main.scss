@@ -17,6 +17,11 @@ body {
   width: 100%;
 }
 
+.arrow {
+  margin: 40px auto;
+  width: 50px;
+}
+
 .title {
   color: $mine-shaft;
   font-size: 30px;
@@ -127,7 +132,7 @@ body {
 
 .alberto {
   height: 320px;
-  margin: 30px auto;
+  margin: 40px auto 60px;
   position: relative;
   width: 320px;
 
