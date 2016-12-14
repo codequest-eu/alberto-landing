@@ -8,12 +8,14 @@ html.no-js(lang='')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='css/normalize.css')
     link(rel='stylesheet', href='css/main.css')
+    script(type='text/javascript', src='app/jquery-3.1.1.js')
+    script(type='text/javascript', src='app/app.js')
   body
     .alberto
       include includes/alberto.pug
     .introduction
-      .title Hi, my name is Alberto!
-      .title I’m concierge for your team.
+      #typewriter
+      #pointer
       .subtitle-all
         .subtitle.
           I’m here is to help you organise your work life and make it fun.
