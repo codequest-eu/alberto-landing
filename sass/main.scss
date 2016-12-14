@@ -1,6 +1,9 @@
 $mine-shaft: #3d3d3d;
 $blue: #448aff;
+$dark-blue: #2962ff;
 $white: #fff;
+$grey: #e0e0e0;
+$black: #000;
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 
 html {
@@ -43,11 +46,17 @@ body {
 .email-input {
   height: 26px;
   width: 260px;
-  border-color: darkgrey;
+  border-color: $black;
   border-style: none none solid;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
+}
+
+.email-input:focus {
+  color: $blue;
+  outline: none;
+  border-color: $blue;
 }
 
 .form-input {
@@ -67,8 +76,12 @@ body {
   width: 160px;
 }
 
+.button-cta:hover {
+  background-color: $dark-blue;
+}
+
 ::placeholder {
-  color: darkgrey;
+  color: $grey;
   font-family: 'Ubuntu', sans-serif;
   font-size: 22px;
   font-weight: 300;

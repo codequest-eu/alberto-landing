@@ -33,11 +33,16 @@ body {
 .email-input {
   height: 26px;
   width: 260px;
-  border-color: darkgrey;
+  border-color: #000;
   border-style: none none solid;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px; }
+
+.email-input:focus {
+  color: #448aff;
+  outline: none;
+  border-color: #448aff; }
 
 .form-input {
   display: inline-block; }
@@ -54,8 +59,11 @@ body {
   line-height: 200%;
   width: 160px; }
 
+.button-cta:hover {
+  background-color: #2962ff; }
+
 ::-webkit-input-placeholder {
-  color: darkgrey;
+  color: #e0e0e0;
   font-family: 'Ubuntu', sans-serif;
   font-size: 22px;
   font-weight: 300;
@@ -63,7 +71,7 @@ body {
   width: 200px; }
 
 ::-moz-placeholder {
-  color: darkgrey;
+  color: #e0e0e0;
   font-family: 'Ubuntu', sans-serif;
   font-size: 22px;
   font-weight: 300;
@@ -71,7 +79,7 @@ body {
   width: 200px; }
 
 :-ms-input-placeholder {
-  color: darkgrey;
+  color: #e0e0e0;
   font-family: 'Ubuntu', sans-serif;
   font-size: 22px;
   font-weight: 300;
@@ -79,7 +87,7 @@ body {
   width: 200px; }
 
 ::placeholder {
-  color: darkgrey;
+  color: #e0e0e0;
   font-family: 'Ubuntu', sans-serif;
   font-size: 22px;
   font-weight: 300;
