@@ -53,16 +53,18 @@ body {
 
 .bold-link {
   color: #448aff;
-  display: inline;
   font-size: 22px;
   font-weight: 700;
-  line-height: 30px; }
+  line-height: 30px;
+  position: relative; }
+
+.link-cta {
+  display: inline-block; }
 
 .line-blue {
-  display: block;
-  left: 47%;
-  position: absolute;
-  top: 88%; }
+  margin-left: 9px;
+  margin-top: -7px;
+  position: absolute; }
 
 .logo {
   padding: 10px 0 0 10px;

@@ -49,6 +49,7 @@ body {
 .introduction {
   margin: 0 auto;
   max-width: 600px;
+  position: relative;
   text-align: center;
 }
 
@@ -62,17 +63,20 @@ body {
 
 .bold-link {
   color: $blue;
-  display: inline;
   font-size: 22px;
   font-weight: 700;
   line-height: 30px;
+  position: relative;
+}
+
+.link-cta {
+  display: inline-block;
 }
 
 .line-blue {
-  display: block;
-  left: 48%;
+  margin-left: 9px;
+  margin-top: -7px;
   position: absolute;
-  top: 65%;
 }
 
 .logo {
@@ -112,10 +116,10 @@ body {
 }
 
 .alberto {
-  height: 230px;
-  margin: 50px auto 0;
+  height: 360px;
+  margin: 30px auto 0;
   position: relative;
-  width: 230px;
+  width: 360px;
 
   .st0 {
     fill: $mine-shaft !important;
