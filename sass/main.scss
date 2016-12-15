@@ -1,9 +1,3 @@
-$mine-shaft: #3d3d3d;
-$blue: #448aff;
-$dark-blue: #2962ff;
-$white: #fff;
-$grey: #e0e0e0;
-$black: #000;
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 
 html {
@@ -49,13 +43,13 @@ body {
 }
 
 .email-input {
-  height: 34px;
-  width: 260px;
   border-color: $mine-shaft;
   border-style: none none solid;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
   font-size: 22px;
+  font-weight: 400;
+  height: 34px;
+  width: 260px;
 }
 
 .email-input:focus {
@@ -67,28 +61,6 @@ body {
   display: inline-block;
 }
 
-.button-cta {
-  background-color: $mine-shaft;
-  border-radius: 2px;
-  border: 2px solid $mine-shaft;
-  color: $white;
-  display: inline-block;
-  font-size: 22px;
-  font-weight: 400;
-  height: 40px;
-  line-height: 200%;
-  margin-left: 10px;
-  padding-bottom: 5px;
-  width: 160px;
-  cursor: pointer;
-}
-
-.button-cta:hover {
-  background-color: $white;
-  border: 2px solid $mine-shaft;
-  color: $mine-shaft;
-}
-
 ::placeholder {
   color: $grey;
   font-family: 'Ubuntu', sans-serif;
@@ -96,158 +68,4 @@ body {
   font-weight: 300;
   height: 40px;
   width: 200px;
-}
-
-.logo {
-  padding: 10px 0 0 10px;
-  width: 40px;
-}
-
-.hat svg {
-  height: 45%;
-  left: 10%;
-  position: absolute;
-  width: 80%;
-}
-
-.eyes svg {
-  height: 6%;
-  left: 32%;
-  position: absolute;
-  top: 57%;
-  width: 36%;
-}
-
-.glasses svg {
-  height: 47%;
-  left: 51%;
-  position: absolute;
-  top: 46%;
-  width: 29%;
-}
-
-.moustache svg {
-  height: 25%;
-  left: 11%;
-  position: absolute;
-  top: 76%;
-  width: 78%;
-}
-
-.alberto {
-  height: 260px;
-  margin: 40px auto 60px;
-  position: relative;
-  width: 260px;
-
-  .st0 {
-    fill: $mine-shaft !important;
-    fill-opacity: 1;
-  }
-
-  path {
-    animation: dash 5s linear, alberto-color 4s;
-    stroke-dasharray: 1700;
-    stroke-dashoffset: 0;
-  }
-
-  @keyframes dash {
-    from {
-      stroke-dashoffset: 1700;
-    }
-
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  circle {
-    animation: dash-eyes 5s linear, alberto-color 4s;
-    stroke-dasharray: 500;
-    stroke-dashoffset: 0;
-  }
-
-  @keyframes dash-eyes {
-    from {
-      stroke-dashoffset: 500;
-    }
-
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  @keyframes alberto-color {
-    0% {
-      fill-opacity: 0;
-    }
-
-    80% {
-      fill-opacity: 0;
-    }
-
-    to {
-      fill-opacity: 1;
-    }
-  }
-
-  .hat svg {
-    animation: shake-hat 15s 10s infinite;
-    transform-origin: 50% 150%;
-  }
-
-  @keyframes shake-hat {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    2% {
-      transform: rotate(-7deg);
-    }
-
-    6% {
-      transform: rotate(0deg);
-    }
-  }
-
-  .moustache svg {
-    animation: shake-moustache 10s 5s infinite;
-  }
-
-  @keyframes shake-moustache {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    2% {
-      transform: rotate(7deg);
-    }
-
-    6% {
-      transform: rotate(-5deg);
-    }
-
-    10% {
-      transform: rotate(0deg);
-    }
-  }
-
-  .right-eye {
-    animation: wink-eyes 5s 7s infinite;
-    transform-origin: center;
-  }
-
-  @keyframes wink-eyes {
-    0% {
-      transform: scaleY(1);
-    }
-
-    5% {
-      transform: scaleY(.2);
-    }
-
-    10% {
-      transform: scaleY(1);
-    }
-  }
 }

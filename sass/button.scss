@@ -1,0 +1,21 @@
+.button-cta {
+  background-color: $mine-shaft;
+  border: 2px solid $mine-shaft;
+  border-radius: 2px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 200%;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  width: 160px;
+}
+
+.button-cta:hover {
+  background-color: $white;
+  border: 2px solid $mine-shaft;
+  color: $mine-shaft;
+}
