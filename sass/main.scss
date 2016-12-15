@@ -41,7 +41,7 @@ body {
   display: inline;
   font-size: 22px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 56px;
 }
 
 .subtitle-all {
@@ -49,9 +49,9 @@ body {
 }
 
 .email-input {
-  height: 26px;
+  height: 34px;
   width: 260px;
-  border-color: $black;
+  border-color: $mine-shaft;
   border-style: none none solid;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
@@ -59,9 +59,8 @@ body {
 }
 
 .email-input:focus {
-  color: $blue;
+  color: $mine-shaft;
   outline: none;
-  border-color: $blue;
 }
 
 .form-input {
@@ -69,20 +68,22 @@ body {
 }
 
 .button-cta {
-  background-color: $blue;
-  border-radius: 20px;
+  border-radius: 2px;
   display: inline-block;
-  color: $white;
+  color: $mine-shaft;
   margin-left: 10px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: 400;
   height: 40px;
   line-height: 200%;
   width: 160px;
+  border: 2px solid $mine-shaft;
+  padding-bottom: 5px;
 }
 
 .button-cta:hover {
-  background-color: $dark-blue;
+  background-color: $mine-shaft;
+  color: $white;
 }
 
 ::placeholder {
