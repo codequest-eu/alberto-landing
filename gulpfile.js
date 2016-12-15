@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var awspublish = require('gulp-awspublish');
 var gutil = require('gulp-util');
+var concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('pug', function buildHTML() {
