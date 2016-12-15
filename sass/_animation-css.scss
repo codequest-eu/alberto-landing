@@ -1,3 +1,22 @@
+.subtitle-all {
+  animation: 3s;
+  animation-iteration-count: 1;
+  animation-name: showEffect;
+  animation-timing-function: ease-in;
+  display: block;
+  visibility: visible;
+}
+
+@keyframes showEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .alberto {
   height: 260px;
   margin: 40px auto 60px;

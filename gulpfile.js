@@ -3,8 +3,6 @@ var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 var awspublish = require('gulp-awspublish');
 var gutil = require('gulp-util');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('pug', function buildHTML() {
@@ -42,7 +40,6 @@ gulp.task('image:watch', function () {
 
 gulp.task('js', function(){
   gulp.src('./app/*.js')
-    .pipe(concat('all.js'))
     .pipe(gulp.dest('./dist/app'))
 });
 gulp.task('js:watch', function(){
