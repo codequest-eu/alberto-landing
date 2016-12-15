@@ -68,22 +68,25 @@ body {
 }
 
 .button-cta {
+  background-color: $mine-shaft;
   border-radius: 2px;
+  border: 2px solid $mine-shaft;
+  color: $white;
   display: inline-block;
-  color: $mine-shaft;
-  margin-left: 10px;
   font-size: 22px;
   font-weight: 400;
   height: 40px;
   line-height: 200%;
-  width: 160px;
-  border: 2px solid $mine-shaft;
+  margin-left: 10px;
   padding-bottom: 5px;
+  width: 160px;
+  cursor: pointer;
 }
 
 .button-cta:hover {
-  background-color: $mine-shaft;
-  color: $white;
+  background-color: $white;
+  border: 2px solid $mine-shaft;
+  color: $mine-shaft;
 }
 
 ::placeholder {
@@ -132,10 +135,10 @@ body {
 }
 
 .alberto {
-  height: 320px;
+  height: 260px;
   margin: 40px auto 60px;
   position: relative;
-  width: 320px;
+  width: 260px;
 
   .st0 {
     fill: $mine-shaft !important;
