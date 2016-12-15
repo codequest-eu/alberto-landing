@@ -9,13 +9,12 @@ html.no-js(lang='')
     link(rel='stylesheet', href='css/normalize.css')
     link(rel='stylesheet', href='css/main.css')
     script(type='text/javascript', src='app/jquery-3.1.1.js')
-    script(type='text/javascript', src='app/app.js')
+    
   body
     .alberto
       include includes/alberto.pug
     .introduction
-      #typewriter
-      #pointer
+      #typedtext
       .subtitle-all
         .subtitle.
           I’m here is to help you organise your work life and make it fun.
@@ -26,3 +25,4 @@ html.no-js(lang='')
         .button-cta get started
     .arrow
       include includes/arrow-down.pug
+      script(type='text/javascript', src='app/all.js')
