@@ -49,6 +49,13 @@ gulp.task('js:watch', function(){
   gulp.watch('./app/*.js', ['js'])
 })
 
+gulp.task('jquery', function(){
+  gulp.src('./jquery/*.js')
+    .pipe(concat('jquery-3.1.1.js'))
+    .pipe(gulp.dest('./dist/jquery'))
+});
+gulp.task('jquery:watch', function(){
+  gulp.watch('./jquery/*.js', ['jquery'])
+})
 
-
-gulp.task('default', ['image', 'sass', 'pug','sass:watch', 'pug:watch', 'image:watch', 'js', 'js:watch']);
+gulp.task('default', ['image', 'sass', 'pug','sass:watch', 'pug:watch', 'image:watch', 'js', 'js:watch', 'jquery','jquery:watch']);
