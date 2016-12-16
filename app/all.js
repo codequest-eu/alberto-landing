@@ -1,7 +1,7 @@
 
 var myDelay;
 var aText = new Array(
-	"Hi, my name is Alberto !", 
+	"Hi, my name is Alberto!",
 	"I’m concierge for your team."
 );
 
@@ -9,16 +9,16 @@ var iSpeed = 100; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
 var iScrollAt = 20; // start scrolling up at this many lines
- 
+
 var iTextPos = 0; // initialise text position
 var sContents = ''; // initialise contents variable
 var iRow; // initialise current row
- 
+
 function typewriter(){
  sContents =  ' ';
  iRow = Math.max(0, iIndex-iScrollAt);
  var destination = document.getElementById("typedtext");
- 
+
  while ( iRow < iIndex ) {
   sContents += aText[iRow++] + '<br />';
  }
@@ -37,7 +37,7 @@ function typewriter(){
 
 
 function myDelayFunction() {
-    myDelay = setTimeout(typewriter, 5000);
+    myDelay = setTimeout(typewriter, 3000);
 }
 myDelayFunction();
 
@@ -59,20 +59,20 @@ $(document).ready(function() {
 						$(".email-input").parent().append('<div class="error-text">No ale daj normalnego mejla ;).</div>');
 				}
 					if (mailV)	 {
-		
+
 		$('.button-cta').html('Wysyłanie');
-	
+
 		var obj = {
 			mail: mail,
 		};
 		var sendValue=$.param(obj);
 		console.log(sendValue);
-		
-		
+
+
 		$.ajax({
 			method: 'POST',
 			url: 'URL' ,
-			data: sendValue, 
+			data: sendValue,
 			headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 			}).done(function(data) {
 				if(msg = 1) {
@@ -80,14 +80,14 @@ $(document).ready(function() {
 				} else {
 					console.log('error');
 				}
-				console.log(data);	
+				console.log(data);
   		});
 
-	
+
 	}else{
-		
+
 		console.log('ERROR')
 	}
-		return false;	
-	});		
+		return false;
+	});
 });

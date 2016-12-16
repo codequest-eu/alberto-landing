@@ -1,5 +1,16 @@
+.arrow-down0 {
+  animation-delay: 10s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-name: showEffect;
+  animation-timing-function: ease-in;
+  display: block;
+  visibility: visible;
+}
+
 .subtitle-all {
-  animation-delay: 12s;
+  animation-delay: 9s;
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
@@ -31,7 +42,7 @@
   }
 
   path {
-    animation: dash 5s linear, alberto-color 4s;
+    animation: dash 3s linear, alberto-color 3s;
     stroke-dasharray: 1700;
     stroke-dashoffset: 0;
   }
@@ -47,7 +58,7 @@
   }
 
   circle {
-    animation: dash-eyes 5s linear, alberto-color 4s;
+    animation: dash-eyes 3s linear, alberto-color 3s;
     stroke-dasharray: 500;
     stroke-dashoffset: 0;
   }
