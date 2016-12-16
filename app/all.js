@@ -17,7 +17,7 @@ var iRow; // initialise current row
 function typewriter(){
  sContents =  ' ';
  iRow = Math.max(0, iIndex-iScrollAt);
- var destination = document.getElementById("typedtext");
+ var destination = document.getElementsByClassName("typedtext");
  
  while ( iRow < iIndex ) {
   sContents += aText[iRow++] + '<br />';
@@ -41,7 +41,7 @@ function myDelayFunction() {
 }
 myDelayFunction();
 
-
+//walidacja
 $(document).ready(function() {
 		$('.button-cta').on('click', function() {
 			var wzorMaila = /^[0-9a-z_.-]+@[0-9a-z.-]+\.[a-z]{2,3}$/i;
@@ -57,6 +57,7 @@ $(document).ready(function() {
 					console.log(mailV)
 					$(".email-input").addClass('input-error')
 						$(".email-input").parent().append('<div class="error-text">No ale daj normalnego mejla ;).</div>');
+	
 				}
 					if (mailV)	 {
 		
