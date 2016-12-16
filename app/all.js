@@ -5,7 +5,7 @@ var aText = new Array(
 	"I’m concierge for your team."
 );
 
-var iSpeed = 100; // time delay of print out
+var iSpeed = 80; // time delay of print out
 var iIndex = 0; // start printing array at this posision
 var iArrLength = aText[0].length; // the length of the text array
 var iScrollAt = 20; // start scrolling up at this many lines
@@ -56,11 +56,11 @@ $(document).ready(function() {
 					mailV = false;
 					console.log(mailV)
 					$(".email-input").addClass('input-error')
-						$(".email-input").parent().append('<div class="error-text">No ale daj normalnego mejla ;).</div>');
+						$(".email-input").parent().append('<div class="error-text">Invalid e-mail</div>');
 				}
 					if (mailV)	 {
 
-		$('.button-cta').html('Wysyłanie');
+		$('.button-cta').html('Sending');
 
 		var obj = {
 			mail: mail,

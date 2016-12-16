@@ -15,6 +15,19 @@ body {
   width: 100%;
 }
 
+.email-input.input-error {
+  border-color: $error-color;
+  color: $error-color;
+}
+
+.error-text {
+  color: $error-color;
+  display: block;
+  font-size: 11px;
+  position: absolute;
+  margin-top: 5px;
+}
+
 .arrow {
   margin: 40px auto;
   width: 50px;
