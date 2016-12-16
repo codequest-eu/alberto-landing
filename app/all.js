@@ -22,7 +22,7 @@ function typewriter(){
 	while ( iRow < iIndex ) {
 		sContents += aText[iRow++] + '<br />';
 	}
-	destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "|";
+	destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + '<div class="prompt">|</div>';
 	if ( iTextPos++ == iArrLength ) {
 		iTextPos = 0;
 		iIndex++;
