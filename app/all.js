@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
-@DRickRichard88
-Unwatch 6
-Star 0
-Fork 0 codequest-eu/alberto-landing
-Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Tree: 671817b26a Find file Copy pathalberto-landing/app/all.js
-671817b  an hour ago
-@maretamara maretamara styling error
-2 contributors @maretamara @DRickRichard88
-RawBlameHistory    
-94 lines (76 sloc)  2.07 KB
 
 var myDelay;
 var aText = new Array(
@@ -68,7 +51,8 @@ $(document).ready(function() {
 		if(wzorMaila.test(mail)){
 			mailV = true;
 			console.log(mailV)
-			$(".email-input").parent().remove('div');
+			$(".email-input").removeClass('input-error')
+			$(".email-input").next().remove('div');
 		}else{
 			mailV = false;
 			console.log(mailV)
