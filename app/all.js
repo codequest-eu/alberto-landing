@@ -72,7 +72,7 @@ $(document).ready(function() {
 
 			$.ajax({
 				method: 'POST',
-				url: 'URL' ,
+				url: 'alberto-app.codequest.com/api/newsletters' ,
 				data: sendValue,
 				headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 			}).done(function(data) {
