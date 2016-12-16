@@ -2,7 +2,7 @@
 var myDelay;
 var aText = new Array(
 	"Hi, my name is Alberto!",
-	"I’m concierge for your team."
+	"I’m a concierge for your team."
 );
 
 var iSpeed = 80; // time delay of print out
